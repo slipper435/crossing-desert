@@ -140,7 +140,7 @@
 
     .btn button {
       height: 40px;
-      width: 180px;
+      width: 150px;
       background-color: rgba(207,167,27,100%);
       border: none;
       border-radius: 3;
@@ -153,6 +153,22 @@
       color: rgba(57,57,57,60%);
       font-size: 22px;
       transition: 0.4s;
+    }
+
+    button #back-btn::before{
+      content: '\2039';
+      opacity: 0%;
+      transition: 0.4s;
+    }
+
+    button #back-btn:hover{
+      color:rgb(234,234,234);
+    }
+
+    button #back-btn:hover::before {
+      color:rgb(234,234,234);
+      opacity: 100%;
+      padding-right: 11px;
     }
 
     button #forward-btn::after{
@@ -192,16 +208,19 @@
 
       <div id="section">
         <picture>
-          <source media="(max-width:767px)" srcset="images/main-s.jpg">
-          <source media="(max-width:1023px)" srcset="images/main-m.jpg">
-          <img src="images/main-l.jpg">
+          <source media="(max-width:767px)" srcset="images/test-s.jpg">
+          <source media="(max-width:1023px)" srcset="images/test-m.jpg">
+          <img src="images/test-l.jpg">
         </picture>
-        <p>당신의 삶에서 가장 중요한 가치는 무엇인가요?</p>
+        <p>그러나, 황량한 사막에서의 여정이 힘에 부쳤던 당신은 어쩔수 없이
+          함께 가던 동물들을  버리고 가기로 결심합니다.<br>
+          동물들은 다음과 같습니다: 사자, 말, 소, 양, 원숭이. 당신은 어떤 순서로 동물들을 버리시겠습니까?</p>
       </div>
 
       <div id="content">
         <div class="btn">
-          <button><span id="forward-btn"><a href="test-page1.html" title="Start!">Start</a></span></button>
+          <button><span id="back-btn"><a href="test-page1.html" title="Back">Back</a></span></button>
+          <button><span id="forward-btn"><a href="test-page3.html" title="Next">Next</a></span></button>
         </div>
       </div>
 
