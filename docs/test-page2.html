@@ -24,9 +24,9 @@
 
     h1{
       font-family: tahoma, 맑은고딕;
-      font-size: 25px;
-      line-height: 160%;
+      font-size: 16px;
       text-align: center;
+      font-weight: normal;
       }
 
     #header {
@@ -44,13 +44,14 @@
 
     #nav {
       width: 150px;
-      height: 1040px;
+      height: 1080px;
       background-color: rgba(207,167,27,100%);
       padding-top: 70px;
       float: left;
       left: -142px;
       position: fixed;
-      transition: 1s
+      transition: 1s;
+      z-index: 1;
     }
 
     #nav:hover{
@@ -108,9 +109,8 @@
       color: rgba(207,167,27,80%);
       font-size: 16px;
       text-align: center;
-      padding: 10px 5%;
-      line-height: 200%;
       overflow: hidden;
+      padding-top: 30px;
     }
 
     #content{
@@ -120,6 +120,7 @@
       padding: 20px 5%;
       font-size: 16px;
       line-height: 200%;
+      text-align: justify;
     }
 
     #footer{
@@ -136,11 +137,12 @@
 
     .btn{
       text-align: center;
+      margin-top: 30px;
     }
 
     .btn button {
-      height: 40px;
-      width: 150px;
+      height: 35px;
+      width: 120px;
       background-color: rgba(207,167,27,100%);
       border: none;
       border-radius: 3;
@@ -151,7 +153,7 @@
 
     .btn span {
       color: rgba(57,57,57,60%);
-      font-size: 22px;
+      font-size: 18px;
       transition: 0.4s;
     }
 
@@ -210,18 +212,20 @@
         <picture>
           <source media="(max-width:767px)" srcset="images/test-s.jpg">
           <source media="(max-width:1023px)" srcset="images/test-m.jpg">
-          <img src="images/test-l.jpg">
+          <img src="images/test-l.jpg" title="test">
         </picture>
-        <p>그러나, 황량한 사막에서의 여정이 힘에 부쳤던 당신은 어쩔수 없이
-          함께 가던 동물들을  버리고 가기로 결심합니다.<br>
-          동물들은 다음과 같습니다: 사자, 말, 소, 양, 원숭이. 당신은 어떤 순서로 동물들을 버리시겠습니까?</p>
-      </div>
-
-      <div id="content">
         <div class="btn">
           <button><span id="back-btn"><a href="test-page1.html" title="Back">Back</a></span></button>
           <button><span id="forward-btn"><a href="test-page3.html" title="Next">Next</a></span></button>
         </div>
+      </div>
+
+      <div id="content">
+        <p>그러나, 황량한 사막에서의 여정이 힘에 부쳤던 당신은 어쩔 수 없이
+          함께 가던 동물들을 버리고 가기로 결심합니다.
+          동물들은 다음과 같습니다:
+          사자, 말, 소, 양, 원숭이. 당신은 어떤 순서로 동물들을 버리시겠습니까?
+        </p>
       </div>
 
       <div id="footer">

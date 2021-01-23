@@ -24,9 +24,9 @@
 
     h1{
       font-family: tahoma, 맑은고딕;
-      font-size: 25px;
-      line-height: 160%;
+      font-size: 16px;
       text-align: center;
+      font-weight: normal;
       }
 
     #header {
@@ -44,13 +44,14 @@
 
     #nav {
       width: 150px;
-      height: 1040px;
+      height: 1080px;
       background-color: rgba(207,167,27,100%);
       padding-top: 70px;
       float: left;
       left: -142px;
       position: fixed;
-      transition: 1s
+      transition: 1s;
+      z-index: 1;
     }
 
     #nav:hover{
@@ -108,9 +109,8 @@
       color: rgba(207,167,27,80%);
       font-size: 16px;
       text-align: center;
-      padding: 10px 5%;
-      line-height: 200%;
       overflow: hidden;
+      padding-top: 30px;
     }
 
     #content{
@@ -120,6 +120,7 @@
       padding: 20px 5%;
       font-size: 16px;
       line-height: 200%;
+      text-align: justify;
     }
 
     #footer{
@@ -136,11 +137,12 @@
 
     .btn{
       text-align: center;
+      margin-top: 30px;
     }
 
     .btn button {
-      height: 40px;
-      width: 150px;
+      height: 35px;
+      width: 120px;
       background-color: rgba(207,167,27,100%);
       border: none;
       border-radius: 3;
@@ -151,7 +153,7 @@
 
     .btn span {
       color: rgba(57,57,57,60%);
-      font-size: 22px;
+      font-size: 18px;
       transition: 0.4s;
     }
 
@@ -210,19 +212,19 @@
         <picture>
           <source media="(max-width:767px)" srcset="images/main-s.jpg">
           <source media="(max-width:1023px)" srcset="images/main-m.jpg">
-          <img src="images/main-l.jpg">
+          <img src="images/main-l.jpg" title="desert">
         </picture>
-        <p>당신은 삶에 회의를 느끼고 아프리카로 떠나 한 마을에 정착해 살게 됩니다.<br>
-        그러던 중 마을의 족장이 찾아와 옆 마을에 전해줘야할 동물들이 있는데
-        그 동물들과 함께 가줄 수 있느냐고 묻습니다.<br>
-        흔쾌히 부탁을 수락한 당신은 동물들과 함께 옆 마을로 향 하던 중 사막을 가로지르게 됩니다.</p>
-      </div>
-
-      <div id="content">
         <div class="btn">
           <button><span id="back-btn"><a href="index.html" title="Back">Back</a></span></button>
           <button><span id="forward-btn"><a href="test-page2.html" title="Next">Next</a></span></button>
         </div>
+      </div>
+
+      <div id="content">
+        <p>당신은 삶에 회의를 느끼고 아프리카로 떠나 한 마을에 정착해 살게 됩니다.
+          그러던 중 마을의 족장이 찾아와 옆 마을에 전해줘야 할 동물들이 있는데
+          그 동물들과 함께 가줄 수 있느냐고 묻습니다.
+          흔쾌히 부탁을 수락한 당신은 동물들과 함께 옆 마을로 향하던 중 사막을 가로지르게 됩니다.</p>
       </div>
 
       <div id="footer">

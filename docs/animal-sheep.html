@@ -113,6 +113,19 @@
       padding-top: 30px;
     }
 
+    .img-box{
+      display: inline-block;
+      position: relative;
+    }
+
+    .link-box{
+      position:absolute;
+    }
+
+    .link-box:hover{
+      background-color: rgba(207,167,27,15%);
+    }
+
     #content{
       height: 450px;
       background-color: rgba(57,57,57,100%);
@@ -157,6 +170,22 @@
       transition: 0.4s;
     }
 
+    button #back-btn::before{
+      content: '\2039';
+      opacity: 0%;
+      transition: 0.4s;
+    }
+
+    button #back-btn:hover{
+      color:rgb(234,234,234);
+    }
+
+    button #back-btn:hover::before {
+      color:rgb(234,234,234);
+      opacity: 100%;
+      padding-right: 11px;
+    }
+
     button #forward-btn::after{
       content: '\203A';
       opacity: 0%;
@@ -193,19 +222,28 @@
       <div id="header"><p>사막심리테스트</p></div>
 
       <div id="section">
-        <picture>
-          <source media="(max-width:767px)" srcset="images/main-s.jpg">
-          <source media="(max-width:1023px)" srcset="images/main-m.jpg">
-          <img src="images/main-l.jpg" title="desert">
-        </picture>
+        <div class="img-box">
+          <picture>
+            <source media="(max-width:767px)" srcset="images/test-s-sheep.jpg">
+            <source media="(max-width:1023px)" srcset="images/test-m-sheep.jpg">
+            <img src="images/test-l-sheep.jpg" title="test">
+              <a href="animal-monkey.html" title="원숭이"><div class="link-box" style="left:2%; top:17%; width:23%; height:39%;"></div></a>
+              <a href="animal-sheep.html" title="양"><div class="link-box" style= "right:3%; top:21%; width:31%; height:34%"></div></a>
+              <a href="animal-cow.html" title="소"><div class="link-box" style="left:0.5%; bottom:2%; width:30%; height:37%;"></div></a>
+              <a href="animal-lion.html" title="사자"><div class="link-box" style="left:34%; bottom:2%; width:29%; height:38%"></div></a>
+              <a href="animal-horse.html" title="말"><div class="link-box" style="right:0.3%; bottom:2%; width:32%; height:37%"></div></a>
+          </picture>
+        </div>
         <div class="btn">
-          <button><span id="forward-btn"><a href="test-page1.html" title="Start!">Start</a></span></button>
+          <button><span id="back-btn"><a href="test-page3.html" title="Back">Back</a></span></button>
         </div>
       </div>
 
       <div id="content">
-        <h1>당신의 삶에서 가장 중요한 가치는 무엇인가요?</h1>
-
+        <h1>&#706;양&#707;</h1>
+        <p>양이 의미하는 것은 사랑입니다. 만약 당신이 가장 먼저 양을 버린다면 당신이 힘든 일이 생겼을 때 사랑하는 연인이나 배우와의
+          행복을 가장 먼저 포기한다는 것을 의미합니다. 반면 양을 마지막까지 버리지 않는 사람은 사랑에 목숨을 거는 열정의 소유자입니다.
+          종종 내성적이라는 말 듣기도 하지만 온순함 속에 남다른 뜨거움을 품은 사람입니다.</p>
       </div>
 
       <div id="footer">

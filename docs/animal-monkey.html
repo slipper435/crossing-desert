@@ -113,6 +113,19 @@
       padding-top: 30px;
     }
 
+    .img-box{
+      display: inline-block;
+      position: relative;
+    }
+
+    .link-box{
+      position:absolute;
+    }
+
+    .link-box:hover{
+      background-color: rgba(207,167,27,15%);
+    }
+
     #content{
       height: 450px;
       background-color: rgba(57,57,57,100%);
@@ -157,6 +170,22 @@
       transition: 0.4s;
     }
 
+    button #back-btn::before{
+      content: '\2039';
+      opacity: 0%;
+      transition: 0.4s;
+    }
+
+    button #back-btn:hover{
+      color:rgb(234,234,234);
+    }
+
+    button #back-btn:hover::before {
+      color:rgb(234,234,234);
+      opacity: 100%;
+      padding-right: 11px;
+    }
+
     button #forward-btn::after{
       content: '\203A';
       opacity: 0%;
@@ -193,19 +222,28 @@
       <div id="header"><p>사막심리테스트</p></div>
 
       <div id="section">
-        <picture>
-          <source media="(max-width:767px)" srcset="images/main-s.jpg">
-          <source media="(max-width:1023px)" srcset="images/main-m.jpg">
-          <img src="images/main-l.jpg" title="desert">
-        </picture>
+        <div class="img-box">
+          <picture>
+            <source media="(max-width:767px)" srcset="images/test-s-monkey.jpg">
+            <source media="(max-width:1023px)" srcset="images/test-m-monkey.jpg">
+            <img src="images/test-l-monkey.jpg" title="test">
+              <a href="animal-monkey.html" title="원숭이"><div class="link-box" style="left:2%; top:17%; width:23%; height:39%;"></div></a>
+              <a href="animal-sheep.html" title="양"><div class="link-box" style= "right:3%; top:21%; width:31%; height:34%"></div></a>
+              <a href="animal-cow.html" title="소"><div class="link-box" style="left:0.5%; bottom:2%; width:30%; height:37%;"></div></a>
+              <a href="animal-lion.html" title="사자"><div class="link-box" style="left:34%; bottom:2%; width:29%; height:38%"></div></a>
+              <a href="animal-horse.html" title="말"><div class="link-box" style="right:0.3%; bottom:2%; width:32%; height:37%"></div></a>
+          </picture>
+        </div>
         <div class="btn">
-          <button><span id="forward-btn"><a href="test-page1.html" title="Start!">Start</a></span></button>
+          <button><span id="back-btn"><a href="test-page3.html" title="Back">Back</a></span></button>
         </div>
       </div>
 
       <div id="content">
-        <h1>당신의 삶에서 가장 중요한 가치는 무엇인가요?</h1>
-
+        <h1>&#706;원숭이&#707;</h1>
+        <p>원숭이는 친구를 의미합니다. 마지막까지 원숭이를 버리지 않고 함께 가는 사람은 우정을 중요하게 여기는 사람이며,
+          사교적인 성격의 소유자입니다. 때때로 실속 없고 가벼운 사람이라는 평을 듣기도 하지만 놀라운 친화력과 의리를 지닌 사람입니다.
+          겉으로는 인기가 많고 밝은 모습을 보여주지만 고독한 면을 지니고 있기도 합니다.</p>
       </div>
 
       <div id="footer">
