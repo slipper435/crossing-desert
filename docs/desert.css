@@ -47,13 +47,13 @@ h3{
   padding-top: 70px;
   float: left;
   left: -142px;
+  transition: left 1s;
   position: fixed;
   z-index: 1;
 }
 
 #nav:hover{
   left: 0;
-  transition: 1s;
 
 }
 
